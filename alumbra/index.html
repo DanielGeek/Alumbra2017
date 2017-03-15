@@ -186,6 +186,17 @@
         </div>
         <!-- Fin Sección renacer -->
         
+         <!-- Inicio Sección El camino -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/ElCamino.jpg" alt="renacer" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>El camino</b></p>
+            <p class="w3-opacity">Inicio el 30 de Mayo de 2016</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('camino').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección El camino -->
+        
       </div>
       <!-- Fin Células Universitarias -->
       
@@ -264,7 +275,7 @@
       <header class="w3-container w3-purple w3-center w3-padding-32"> 
         <span onclick="document.getElementById('luz').style.display='none'" 
        class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-lightbulb-o w3-margin-right" aria-hidden="true"></i>Revive URU</h2>
+        <h2 class="w3-wide"><i class="fa fa-lightbulb-o w3-margin-right" aria-hidden="true"></i>La Luz En LUZ </h2>
       </header>
       <div class="w3-container">
         <p><label><i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="https://twitter.com/LaluzenLUZ"> @LaluzenLUZ</a></label></p>
@@ -329,7 +340,7 @@
       <header class="w3-container w3-orange w3-center w3-padding-32"> 
         <span onclick="document.getElementById('renacer').style.display='none'" 
        class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-fire fa-spin w3-margin-right" aria-hidden="true"></i>Proyecto Renacer</h2>
+        <h2 class="w3-wide"><i class="fa fa-free-code-camp fa-spin w3-margin-right" aria-hidden="true"></i>Proyecto Renacer</h2>
       </header>
       <div class="w3-container">
         <p><label><i class="fa fa-google-plus-official" aria-hidden="true"></i> <a href="https://plus.google.com/103243244464680811757"> aaronalcantara55@gmail.com
@@ -344,6 +355,28 @@
     </div>
   </div>
   <!-- Fin Renacer Modal -->
+  
+  <!-- Inicio El camino Modal -->
+  <div id="camino" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-yellow w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('camino').style.display='none'" 
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-arrows-v fa-spin w3-margin-right" aria-hidden="true"></i>El camino</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-google-plus-official" aria-hidden="true"></i> <a href="https://plus.google.com/u/0/116423264446757491455"> celula.elcamino@gmail.com
+        </a></label>
+        </p>
+        <p>
+        El camino es una célula o grupo de personas que se reunen en licom IV en la fec de la universidad del zulia, para anunciar el Evangelio de Cristo!</p>
+        <p>Impressum: Daniel Ángel siervo de Cristo, en colaboración de un ministerio llamado REC perteneciente a la iglesia Evangélica Pentecostal de la Cruz, y sus diferentes células Cristianas</p>
+        <button class="w3-button w3-yellow w3-section" onclick="document.getElementById('camino').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/El-Camino-287613731573229/" class="w3-text-yellow">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin El camino Modal -->
   
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
@@ -444,6 +477,7 @@ var guardaModal4 = document.getElementById('luz');
 var guardaModal5 = document.getElementById('kairos');
 var guardaModal6 = document.getElementById('rec');
 var guardaModal7 = document.getElementById('renacer');
+var guardaModal8 = document.getElementById('camino');
 window.onclick = function(event) {
   if (event.target == laLeyEsCristoModal) {
     guardaModal.style.display = "none";
@@ -465,6 +499,9 @@ window.onclick = function(event) {
   }
   if (event.target == renacer) {
     guardaModal7.style.display = "none";
+  }
+  if (event.target == camino) {
+    guardaModal8.style.display = "none";
   }
 }
 </script>
