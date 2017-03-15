@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/estilos.css">
-
 <body>
 
 <!-- Navbar -->
@@ -384,11 +383,13 @@
     <p class="w3-opacity w3-center"><i>Te Interesa? envianos tu comentario</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m8 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i>  Avenida Padilla Calle 93, Maracaibo, Zulia, Venezuela<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Iglesia Pentecostal La Cruz <br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Avenida Padilla Calle 93, Maracaibo, Zulia, Venezuela<br>
         <i class="fa fa-phone" style="width:30px"></i> Telf: +58 0414 6719588 / 0414 6520300<br>
         <i class="fa fa-phone" style="width:30px"></i> Telf: +58 0261 4194001<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: universitariosrec@gmail.com<br>
       </div>
+      <!-- inicio formulario correo -->
       <div class="w3-col m4">
         <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -403,6 +404,7 @@
           <button class="w3-button w3-black w3-section w3-right" type="submit">Enviar</button>
         </form>
       </div>
+      <!-- fin formulario correo -->
     </div>
   </div>
   
@@ -410,23 +412,30 @@
 </div>
 <!-- Add Google Maps -->
 <div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+<script src="http://maps.googleapis.com/maps/api/js"> </script>
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
+<script>
+
+ function init(){
+        var mapOption = {
+         center: new google.maps.LatLng(10.6461409,-71.6185732),
+             disableDefaultUI: true,
+         zoom: 18, scrollwheel: false, draggable: true,
+         mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapOption);
+    
+     var marker = new google.maps.Marker({
+       position: new google.maps.LatLng(10.6461409,-71.6185732),
   });
   marker.setMap(map);
-}
+ }
+    
+google.maps.event.addDomListener(window, 'load', init);
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
@@ -434,13 +443,13 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
-  <i class="fa fa-instagram w3-hover-text-purple"></i>
-  <i class="fa fa-snapchat w3-hover-text-yellow"></i>
-  <i class="fa fa-pinterest-p w3-hover-text-red"></i>
-  <i class="fa fa-twitter w3-hover-text-light-blue"></i>
-  <i class="fa fa-linkedin w3-hover-text-indigo"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <a href="https://www.facebook.com/events/263390334092600/"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+  <a href="https://www.instagram.com/grupo_rec/"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+<!--  <i class="fa fa-snapchat w3-hover-text-yellow"></i>-->
+<!--  <i class="fa fa-pinterest-p w3-hover-text-red"></i>-->
+<!--  <i class="fa fa-twitter w3-hover-text-light-blue"></i>-->
+<!--  <i class="fa fa-linkedin w3-hover-text-indigo"></i>-->
+  <p class="w3-medium">Convención <a href="https://www.facebook.com/events/263390334092600/" target="_blank">Alumbra 2017</a></p>
 </footer>
 
 <script>
