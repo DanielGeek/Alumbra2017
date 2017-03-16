@@ -1,6 +1,11 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
+.card-title {
+  line-height: 30px;
+  text-align: center;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -10,5 +15,5 @@ a:link {
 }
 
 @media screen and (max-width: 700px){
-    
+
 }
