@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GALERIA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card-2">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.php" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALERIA</a>
+
+
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <div class="container">
+
+      <hr>
+
+      <div class="row">
+
+         <div class="card-columns">
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/rec2.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">GRUPO REC</h4>
+                <p class="card-text">Las actividades que realiza el grupo REC; encontramos, Foros, Conciertos, Obras teatrales, talleres entre otros, que permitan llevar el mensaje de Salvación a los jóvenes universitarios de una manera dinámica y entretenida.</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+
+            <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/leyesCristo.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">La Ley Es Cristo</h4>
+                <p class="card-text">Célula Cristiana Universitaria. Con finalidad de servir a Dios. Ser de bendición para cada estudiante que desea aceptar a CRISTO en FCJP-LUZ.</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/R_1_16.png" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Romanos 1:16</h4>
+                <p class="card-text">¡Somos una Célula Cristiana que no se avergüenza de hablar de Jesús porque es camino, verdad y vida, y mas de lo que la mayoría de la juventud piensa!.</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+             <img class="card-img-top img-fluid" src="imagenes/iglesia.jpg" alt="Card image cap">
+             <div class="card-block">
+                 <h4 class="card-title">Iglesia Evangelica Pentecostal de la Cruz</h4>
+                 <p class="card-text">En su dimensión espiritual la Iglesia Evangélica Pentecostal De La Cruz, es el cuerpo de Cristo cuya cabeza es Jesús; es también una casa de oración cuyos principales propósitos son: glorificar a Dios Padre, Hijo y Espíritu Santo
+                  <div id="iglesia" class="collapse">
+                     y luchar espiritualmente para mantener y defender la victoria que Cristo ya ganó en la cruz; estableciendo el reino de Dios mediante la supresión del poder de Satanás por medio de la autoridad delegada por Cristo, para ello, se concibe como misionera, preparando y estableciendo pastores en iglesias en el interior del país y fuera de él. En su dimensión humana, es una organización sin fines de lucro que trabaja con un personal espiritual, moral y profesionalmente competente en beneficio de sus miembros y la colectividad ejecutando servicios, obras, planes y proyectos para hacer patente la salvación, sanidad, liberación, y el establecimiento de valores ético-religiosos que mejoren su calidad de vida.
+                  </div>
+                 </p>
+                 <button class="btn btn-outline-primary btn-block" data-toggle="collapse" data-target="#iglesia">Ver más</button>
+             </div>
+           </div>
+
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/revive.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Revive URU</h4>
+                <p class="card-text">Grupo Estudiantil Cristiano REVIVE - URU, nuestra misión es implantar el Reino de Dios en la universidad Rafael Urdaneta URU.</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/alumbra.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Alumbra</h4>
+                <p class="card-text">integración de la comunidad cristiana universitaria para incentivarlos a la predicación del evangelio en las     diferentes casas de estudio públicas o privadas a nivel regional y nacional además de brindar herramientas que     sirvan de apoyo para el trabajo en las células universitarias.</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/luz.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">La Luz En LUZ</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse atque animi saepe non velit? Quibusdam at debitis, itaque molestiae, labore delectus nihil alias ex optio voluptatum accusamus, rerum repellendus ab! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos aspernatur, libero mollitia impedit architecto nesciunt sunt quasi natus optio qui quam esse ut neque fugit quod accusamus. Aliquam, tempore. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/kairos.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">KAIROS FHE LUZ</h4>
+                <p class="card-text">Célula Cristiana Universitaria. Con finalidad de servir a Dios. Ser de bendición para cada estudiante que desea aceptar a CRISTO en FHE Universidad del Zulia (LUZ).</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/renacer.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">Proyecto Renacer</h4>
+                <p class="card-text">¡Somos jovenes comprometidos con llevar la palabra de Dios en los liceos y escuelas!</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top img-fluid" src="imagenes/ElCamino.jpg" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">El camino</h4>
+                <p class="card-text">El camino es una célula o grupo de personas que se reunen en licom IV en la fec de la universidad del zulia, para anunciar el Evangelio de Cristo!</p>
+                <a href="#" class="btn btn-outline-primary btn-block">Ver más</a>
+            </div>
+          </div>
+
+         </div>
+
+
+      </div>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <!-- Mostrar menu de nav cuando sea pequeña la pantalla -->
+    <script src="js/menu.js"></script>
+  </body>
+</html>

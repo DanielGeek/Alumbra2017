@@ -1,0 +1,448 @@
+<?php
+	error_reporting(E_ERROR | E_PARSE); // Desactiva la notificación y warnings de error en php.
+?>
+<!DOCTYPE html>
+<html lang="es">
+<title>Alumbra 2017</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+    <a href="#alumbra" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ALUMBRA 2017</a>
+    <a href="#lugar" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LUGAR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
+    <div class="w3-hide-small w3-dropdown-hover">
+      <a href="javascript:void(0)" class="w3-padding-large w3-button" title="More">MAS <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-white w3-card-4">
+        <a href="#">GRUPO REC</a>
+        <a href="#">IGLESIA LA CRUZ</a>
+        <a href="galeria.php" target="_blank">GALERIA</a>
+        <a href="formulario.php" target="_blank">FORMULARIO</a>
+				<a href="calculos.php" target="_blank">CALCULOS</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#alumbra" class="w3-bar-item w3-button w3-padding-large">ALUMBRA2017</a>
+  <a href="#lugar" class="w3-bar-item w3-button w3-padding-large">LUGAR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACTO</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">GRUPO REC</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">IGLESIA LA CRUZ</a>
+  <a href="galeria.php" class="w3-bar-item w3-button w3-padding-large">GALERIA</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imagenes/alumbra.jpg" style="width:100%; height:480px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Campamento La Cruz
+        La Azulita, Mérida, Venezuela</h3>
+      <p><b>12 de abril – 16 de abril</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imagenes/REC.jpg" style="width:100%; height:480px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>GRUPO REC</h3>
+      <p><b>Somos REC (recuperando el control) mensajeros encargados de llevar las buenas noticias de Jesus en las casas de estudio ¡La luz no se ocultara!</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imagenes/iglesia.jpg" style="width:100%; height:480px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+    </div>
+  </div>
+
+  <!-- The ALUMBRA Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="alumbra">
+    <h2 class="w3-wide">ALUMBRA 2017</h2>
+    <p class="w3-opacity"><i>3Era Convención de jóvenes Cristianos Universitarios</i></p>
+    <p class="w3-justify">
+    <strong>MISION: </strong>
+    Es la integración de la comunidad cristiana universitaria para incentivarlos a la predicación del evangelio en las     diferentes casas de estudio públicas o privadas a nivel regional y nacional además de brindar herramientas que     sirvan de apoyo para el trabajo en las células universitarias.</p>
+    <p class="w3-justify">
+    <strong>VISION: </strong>
+    Lograr que los jóvenes cristianos universitarios estén capacitados para ya sea como líder o miembro de célula realice el trabajo evangelistico dentro de las casas de estudios; además de la apertura de nuevas células universitarias en donde no las hay.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Salmo 118:24</p>
+        <img src="imagenes/salmo.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Salmo 119:50</p>
+        <img src="imagenes/salmo.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Salmo 46:10</p>
+        <img src="imagenes/salmo_46.jpeg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The LUGAR Section -->
+  <div class="w3-black" id="lugar">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">FECHA</h2>
+      <p class="w3-opacity w3-center"><i>Recuerda reservar tu entrada!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding w3-red">Abril <span class="w3-red w3-right w3-margin-right">12  a las 8:00 al 16 a las 8:00 UTC-04:30</span></li>
+      </ul>
+
+      <h2 class="w3-wide w3-center">LUGAR</h2>
+       <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding w3-red">Campamento La Cruz<span class="w3-red w3-right w3-margin-right">La Azulita, Mérida, Venezuela</span></li>
+      </ul>
+
+        <!-- Inicio Células Universitarias -->
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+
+        <!-- Inicio Sección La Ley Es Cristo Célula -->
+         <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/leyesCristo.jpg" alt="La Ley es Cristo" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>FCJP-LUZ.</b></p>
+            <p class="w3-opacity">Inicio el 2 de Febrero de 2016</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('laLeyEsCristoModal').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección La Ley Es Cristo Célula -->
+
+        <!-- Inicio Sección R1:16 -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/R_1_16.png" alt="R 1:16" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>R1:16 URBE</b></p>
+            <p class="w3-opacity">Inicio el x de mes de 201x</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('R1').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección R1:16 -->
+
+        <!-- Inicio Sección Revive URU -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/revive.jpg" alt="Revive URU" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Revive URU</b></p>
+            <p class="w3-opacity">Inicio el x de mes de 201x</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('revive').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección Revive URU -->
+
+        <!-- Inicio Sección La Luz En LUZ -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/luz.jpg" alt="Revive URU" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>La Luz En LUZ</b></p>
+            <p class="w3-opacity">Inicio el x de mes de 201x</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('luz').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección La Luz En LUZ -->
+
+        <!-- Inicio Sección KAIROS -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/kairos.jpg" alt="KAIROS" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>KAIROS FHE LUZ</b></p>
+            <p class="w3-opacity">Inicio el x de mes de 201x</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('kairos').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección KAIROS -->
+
+        <!-- Inicio Sección REC -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/rec2.jpg" alt="REC" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>REC Recuperando el control</b></p>
+            <p class="w3-opacity">Inicio el x de mes de 201x</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('rec').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección REC -->
+
+         <!-- Inicio Sección renacer -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/renacer.jpg" alt="renacer" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Proyecto Renacer</b></p>
+            <p class="w3-opacity">Inicio el 20 de Abril de 2015</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('renacer').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección renacer -->
+
+         <!-- Inicio Sección El camino -->
+        <div class="w3-third w3-margin-bottom">
+          <img src="imagenes/ElCamino.jpg" alt="renacer" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>El camino</b></p>
+            <p class="w3-opacity">Inicio el 30 de Mayo de 2016</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('camino').style.display='block'">Ver más</button>
+          </div>
+        </div>
+        <!-- Fin Sección El camino -->
+
+      </div>
+      <!-- Fin Células Universitarias -->
+
+    </div>
+  </div>
+
+  <!-- Inicio La Ley es Cristo Modal -->
+  <div id="laLeyEsCristoModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-red w3-center w3-padding-32">
+        <span onclick="document.getElementById('laLeyEsCristoModal').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-gavel w3-margin-right" aria-hidden="true"></i>La Ley Es Cristo</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/laleyescristo/"> @LaLeyEsCRISTO</a></label></p>
+          <p><label><i class="fa fa-google-plus-square" aria-hidden="true"></i> <a href="https://plus.google.com/107823317873871674246"> gonzalez.crizelda@gmail.com</a></label></p>
+        <p>
+        Descripción: Célula Cristiana Universitaria. Con finalidad de servir a Dios. Ser de bendición para cada estudiante que desea aceptar a CRISTO en FCJP-LUZ.</p>
+        <p>Impressum: Crizelda Gonzalez, en colaboración de un ministerio llamado REC, y sus diferentes células</p>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('laLeyEsCristoModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/pg/LaLeyEsCRISTO/" class="w3-text-red">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin La Ley es Cristo Modal -->
+
+  <!-- Inicio R1:16 Modal -->
+  <div id="R1" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-black w3-center w3-padding-32">
+        <span onclick="document.getElementById('R1').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-steam-square w3-margin-right" aria-hidden="true"></i>R 1:16</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/r1.16/"> @r1.16</a></label></p>
+          <p><label><i class="fa fa-google-plus-square" aria-hidden="true"></i> <a href="https://www.google.com/intl/es-419/gmail/about/"> gruporomanos116@gmail.com</a></label></p>
+        <p>
+        Descripción: ¡Somos una Célula Cristiana que no se avergüenza de hablar de Jesús porque es camino, verdad y vida, y mas de lo que la mayoría de la juventud piensa!.</p>
+        <p>Impressum: Líder: Hno. Eduardo Álvarez
+        Miembro del Grupo REC (Recuperando El Control) de la Iglesia Cristiana Evangélica Pentecostal de "La Cruz".
+        Campus URBE. Prolongación Circunvalación No. 2 con Av. 16 Guajira, al lado de la Plaza de Toros. Maracaibo, Estado         Zulia Venezuela.
+        Tel: 0426-7492143.</p>
+        <button class="w3-button w3-black w3-section" onclick="document.getElementById('R1').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/R116-Urbe-494778004015401/" class="w3-text-black">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin R1:16 -->
+
+<!-- Inicio Revive URU Modal -->
+  <div id="revive" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-green w3-center w3-padding-32">
+        <span onclick="document.getElementById('revive').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-envira w3-margin-right" aria-hidden="true"></i>Revive URU</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="https://twitter.com/maikelismedina"> @maikelismedina</a></label></p>
+
+        <p>
+        Descripción: Grupo Estudiantil Cristiano REVIVE - URU, nuestra misión es implantar el Reino de Dios en la universidad Rafael Urdaneta URU.</p>
+        <p>Impressum: Maikelis Medina, en colaboración de un ministerio llamado REC, y sus diferentes células</p>
+        <button class="w3-button w3-green w3-section" onclick="document.getElementById('revive').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/ReViVe.URU/" class="w3-text-green">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Revive URU Modal -->
+
+<!-- Inicio La Luz En Luz Modal -->
+  <div id="luz" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-purple w3-center w3-padding-32">
+        <span onclick="document.getElementById('luz').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-lightbulb-o w3-margin-right" aria-hidden="true"></i>La Luz En LUZ </h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-twitter-square" aria-hidden="true"></i> <a href="https://twitter.com/LaluzenLUZ"> @LaluzenLUZ</a></label></p>
+
+        <p>
+        Descripción: Somos jóvenes cristianos universitarios comprometidos a impactar nuestra universidad con el amor de Dios, llevando la Luz de Jesús a toda L.U.Z. y más allá :)</p>
+        <p>Impressum: Daniela Viloria, en colaboración de un ministerio llamado REC, y sus diferentes células</p>
+        <button class="w3-button w3-purple w3-section" onclick="document.getElementById('luz').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/laluzenluz?lst=1180721859%3A100001653337844%3A1489376017" class="w3-text-purple">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin La Luz En Luz Modal -->
+
+<!-- Inicio KAIROS Modal -->
+  <div id="kairos" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-blue w3-center w3-padding-32">
+        <span onclick="document.getElementById('kairos').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-circle-o-notch fa-spin w3-margin-right" aria-hidden="true"></i>KAIROS</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-facebook-square" aria-hidden="true"></i> <a href="https://www.facebook.com/kairos.enluz?fref=ts"> Kairos En Luz</a></label></p>
+        <p>
+        Descripción: Célula Cristiana Universitaria. Con finalidad de servir a Dios. Ser de bendición para cada estudiante que desea aceptar a CRISTO en FHE Universidad del Zulia (LUZ).</p>
+        <p>Impressum: Anyelina Rubio, en colaboración de un ministerio llamado REC, y sus diferentes células</p>
+        <button class="w3-button w3-blue w3-section" onclick="document.getElementById('kairos').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/kairos.enluz?fref=ts" class="w3-text-blue">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin KAIROS Modal -->
+
+  <!-- Inicio REC Modal -->
+  <div id="rec" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-red w3-center w3-padding-32">
+        <span onclick="document.getElementById('rec').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-circle fa-spin w3-margin-right" aria-hidden="true"></i>REC Recuperando el control</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-google-plus-official" aria-hidden="true"></i> <a href="https://plus.google.com/114531926174237113299"> universitariosrec@gmail.com
+</a></label></p>
+       <p><label><i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/grupo_rec/
+"> grupo_rec
+</a></label></p>
+        <p>
+        Descripción: Somos REC (recuperando el control) mensajeros encargados de llevar las buenas noticias de Jesús en las casas de estudio ¡La luz no se ocultara!</p>
+        <p>Impressum: REC, en colaboración con sus diferentes células</p>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('rec').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/gruporecuniversitarios/" class="w3-text-red">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin REC Modal -->
+
+  <!-- Inicio Renacer Modal -->
+  <div id="renacer" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-orange w3-center w3-padding-32">
+        <span onclick="document.getElementById('renacer').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-free-code-camp fa-spin w3-margin-right" aria-hidden="true"></i>Proyecto Renacer</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-google-plus-official" aria-hidden="true"></i> <a href="https://plus.google.com/103243244464680811757"> aaronalcantara55@gmail.com
+        </a></label>
+        </p>
+        <p>
+        ¡Somos jovenes comprometidos con llevar la palabra de Dios en los liceos y escuelas!</p>
+        <p>Impressum: Aarón Alcantara, en colaboración con sus diferentes células</p>
+        <button class="w3-button w3-orange w3-section" onclick="document.getElementById('renacer').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/Proyecto-Renacer-827797580628588/" class="w3-text-orange">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Renacer Modal -->
+
+  <!-- Inicio El camino Modal -->
+  <div id="camino" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-yellow w3-center w3-padding-32">
+        <span onclick="document.getElementById('camino').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-arrows-v fa-spin w3-margin-right" aria-hidden="true"></i>El camino</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-google-plus-official" aria-hidden="true"></i> <a href="https://plus.google.com/u/0/116423264446757491455"> celula.elcamino@gmail.com
+        </a></label>
+        </p>
+        <p>
+        El camino es una célula o grupo de personas que se reunen en licom IV en la fec de la universidad del zulia, para anunciar el Evangelio de Cristo!</p>
+        <p>Impressum: Daniel Ángel siervo de Cristo, en colaboración de un ministerio llamado REC perteneciente a la iglesia Evangélica Pentecostal de la Cruz, y sus diferentes células Cristianas</p>
+        <button class="w3-button w3-yellow w3-section" onclick="document.getElementById('camino').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right"><a href="https://www.facebook.com/El-Camino-287613731573229/" class="w3-text-yellow">Contactame</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- Fin El camino Modal -->
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACTO</h2>
+    <p class="w3-opacity w3-center"><i>Te Interesa? envianos tu comentario</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m8 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Iglesia Pentecostal La Cruz <br>
+        <i class="fa fa-map-marker" style="width:30px"></i>Avenida Padilla Calle 93, Maracaibo, Zulia, Venezuela<br>
+        <i class="fa fa-phone" style="width:30px"></i> Telf: +58 0414 6719588 / 0414 6520300<br>
+        <i class="fa fa-phone" style="width:30px"></i> Telf: +58 0261 4194001<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: universitariosrec@gmail.com<br>
+      </div>
+      <!-- inicio formulario correo -->
+      <div class="w3-col m4">
+        <form action="index.php?pag=form" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Comentario" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">Enviar</button>
+        </form>
+      </div>
+      <!-- fin formulario correo -->
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" ></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbzzOTjxAUVgdIp4SejaOSdu8j_FbH_Y8&callback=init"async defer> </script>
+<script src="js/mapa.js"></script>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/events/263390334092600/"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+  <a href="https://www.instagram.com/grupo_rec/"><i class="fa fa-instagram w3-hover-text-purple"></i></a>
+  <p class="w3-medium">Convención <a href="https://www.facebook.com/events/263390334092600/" target="_blank">Alumbra 2017</a></p>
+</footer>
+
+<!-- Muestra slides de las imagenes en el encabezado -->
+<script src="js/Slideshow.js"></script>
+
+<!-- Mostrar menu de nav cuando sea pequeña la pantalla -->
+<script src="js/menu.js"></script>
+
+<!-- Cerrar los modals de las celulas -->
+<script src="js/modal.js"></script>
+
+</body>
+</html>
